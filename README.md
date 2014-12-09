@@ -14,7 +14,7 @@ and ruby sky.rb
 tada!
 
 config
-
+```
 api_key: <your api_key>
  api_secret: <your api_secret>
  projects: 
@@ -23,3 +23,4 @@ api_key: <your api_key>
  locales:
     - en
     - zh-Hant
+```
