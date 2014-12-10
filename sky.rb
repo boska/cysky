@@ -32,7 +32,7 @@ def clean_file(response)
 	response if !response
 	response = response.delete!("\n")
 	response = response.gsub(/\/\*(.|[\r\n])*?\*\//,'')
-	response = response.gsub(/\/\/.\w+/,'')
+	response = response.gsub(/(?<!http:)\/\/\s\w+[^"]+/,'')
 	response = response.gsub(/";"/,"\";\n\"")
 	response
 end
